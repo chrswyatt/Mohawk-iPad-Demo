@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Mohawk DEV Site"
+AuthUserFile /home/mohawk/public_html/.htpasswd
+Require valid-user

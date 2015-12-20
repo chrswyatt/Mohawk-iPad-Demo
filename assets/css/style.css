@@ -1,0 +1,1579 @@
+/*
+Theme Name: 	Themebase [SASS]
+Description: 	Skeleton framework for client sites.
+Author: 		Red Clay Interactive
+Author URI: 	www.redclayinteractive.com
+Version: 		1.0
+*/
+/* -- Fonts
+======================================================================*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_mixins\.scss}line{font-family:\0000312}}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* -- Normalize styles
+======================================================================*/
+/* -- HTML5 display definitions
+======================================================================*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\000036}}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\000037}}
+audio, canvas, video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\000038}}
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\000039}}
+[hidden] {
+  display: none; }
+
+/* -- Base
+======================================================================*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000313}}
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000315}}
+html, button, input, select, textarea {
+  font-family: sans-serif; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000316}}
+body {
+  margin: 0; }
+
+/* -- Links
+======================================================================*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000320}}
+a:focus {
+  outline: thin dotted; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000321}}
+a:active, a:hover {
+  outline: 0; }
+
+/* -- Typography
+======================================================================*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000325}}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000326}}
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000327}}
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000328}}
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000329}}
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000330}}
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000332}}
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000333}}
+blockquote {
+  margin: 1em 40px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000334}}
+dfn {
+  font-style: italic; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000335}}
+mark {
+  background: #ff0;
+  color: #000; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000336}}
+p, pre {
+  margin: 1em 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000337}}
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000338}}
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000339}}
+q {
+  quotes: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000340}}
+q:before, q:after {
+  content: '';
+  content: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000341}}
+small {
+  font-size: 80%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000342}}
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000343}}
+sup {
+  top: -0.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000344}}
+sub {
+  bottom: -0.25em; }
+
+/* -- Lists
+======================================================================*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000348}}
+dl, menu, ol, ul {
+  margin: 1em 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000349}}
+dd {
+  margin: 0 0 0 40px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000350}}
+menu, ol, ul {
+  padding: 0 0 0 40px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000351}}
+nav ul, nav ol {
+  list-style: none;
+  list-style-image: none; }
+
+/* -- Embedded content
+======================================================================*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000355}}
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000356}}
+svg:not(:root) {
+  overflow: hidden; }
+
+/* -- Figures
+======================================================================*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000360}}
+figure {
+  margin: 0; }
+
+/* -- Forms
+======================================================================*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000364}}
+form {
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000365}}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000366}}
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000367}}
+button, input, select, textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000368}}
+button, input {
+  line-height: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000369}}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+  *overflow: visible; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000370}}
+button[disabled], input[disabled] {
+  cursor: default; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000371}}
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000372}}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000373}}
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000374}}
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000375}}
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+/* -- Tables
+======================================================================*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_normalize\.scss}line{font-family:\0000379}}
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* -- Global
+======================================================================*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\0000357}}
+body {
+  font: 14px/1.5em Arial, Helvetica, sans-serif;
+  background: url(../images/bg.gif) 5px -12px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\0000362}}
+body[orient="portrait"] {
+  -webkit-transform: rotate(-90deg); }
+
+/* -- Chrome Frame prompt -- */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\0000365}}
+.chromeframe {
+  color: #000;
+  background: #ccc;
+  padding: 0.2em 0;
+  margin: 0.2em 0; }
+
+/* -- Selections -- */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\0000373}}
+::-moz-selection, ::selection {
+  text-shadow: none; }
+
+/* -- Links -- */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\0000380}}
+a, a:visited {
+  color: #515151; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\0000385}}
+  a:hover, a:focus, a:visited:hover, a:visited:focus {
+    color: #111111; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\0000396}}
+  a:link, a:visited:link {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
+
+/* -- File Types -- */
+/* -- RCI Contact Info -- */
+/* -- Base styles
+======================================================================*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003141}}
+html, button, input, select, textarea {
+  color: #222; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003143}}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003144}}
+img {
+  vertical-align: middle; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003145}}
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003146}}
+textarea {
+  resize: vertical; }
+
+/* -- Wrappers
+======================================================================*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003150}}
+#content, .wrap {
+  width: 980px;
+  margin: 0 auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003157}}
+.button, .button:visited {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #a9a9a9;
+  border-color: #a9a9a9 #929292 #929292 #c4c5c5;
+  padding: 8px 16px;
+  color: #515151;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 2px 1px white;
+  cursor: pointer;
+  margin-bottom: 20px;
+  line-height: 21px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  -border-radius: 6px;
+  border-radius: 6px;
+  background-color: #e3e3e3;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#e3e3e3));
+  background-image: -webkit-linear-gradient(top, #f7f7f7, #e3e3e3);
+  background-image: -moz-linear-gradient(top, #f7f7f7, #e3e3e3);
+  background-image: -ms-linear-gradient(top, #f7f7f7 0%, #e3e3e3 100%);
+  background-image: -o-linear-gradient(top, #f7f7f7, #e3e3e3);
+  background-image: linear-gradient(to bottom, #f7f7f7, #e3e3e3);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7', endColorstr='#e3e3e3' );
+  filter: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003179}}
+  .button:hover, .button:focus, .button:visited:hover, .button:visited:focus {
+    background: #e51937;
+    color: white;
+    text-shadow: none;
+    filter: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003186}}
+  .button:active, .button:visited:active {
+    background-color: #515151;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#444444), to(#515151));
+    background-image: -webkit-linear-gradient(top, #444444, #515151);
+    background-image: -moz-linear-gradient(top, #444444, #515151);
+    background-image: -ms-linear-gradient(top, #444444 0%, #515151 100%);
+    background-image: -o-linear-gradient(top, #444444, #515151);
+    background-image: linear-gradient(to bottom, #444444, #515151);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#515151' ); }
+
+/* -- Header
+======================================================================*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003193}}
+header {
+  background: #f3f4f4;
+  width: 100%;
+  height: 113px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 3px 5px rgba(212, 212, 212, 0.75);
+  -moz-box-shadow: 0px 3px 5px rgba(212, 212, 212, 0.75);
+  -ms-box-shadow: 0px 3px 5px rgba(212, 212, 212, 0.75);
+  -o-box-shadow: 0px 3px 5px rgba(212, 212, 212, 0.75);
+  -box-shadow: 0px 3px 5px rgba(212, 212, 212, 0.75);
+  box-shadow: 0px 3px 5px rgba(212, 212, 212, 0.75); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003201}}
+.nav-header {
+  width: 980px;
+  margin: 0 auto !important;
+  float: none !important;
+  z-index: 200; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_mixins\.scss}line{font-family:\0000339}}
+  .nav-header, .nav-header ul, .nav-header li, .nav-header a {
+    position: relative;
+    float: left;
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003203}}
+.logo {
+  float: left;
+  margin: 40px 0 0 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003208}}
+.heading {
+  color: #aaaaaa;
+  float: right;
+  font: 700 18px Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  margin: 75px 0 0 0; }
+
+/* -- Image Slider
+======================================================================*/
+/* -- Slider -- */
+/* -- Social
+======================================================================*/
+/* -- Content (bundled)
+======================================================================*/
+/* -- Content (homepage)
+======================================================================*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003341}}
+.bars {
+  float: left;
+  margin: 10px 0;
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003342}}
+.bars div {
+  float: left;
+  height: 8px;
+  margin: 0 0 0 4px;
+  width: 242px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003343}}
+.bars div:first-child {
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003344}}
+.bars .red {
+  background: #e51937; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003345}}
+.bars .brown {
+  background: #a59072; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003346}}
+.bars .dark-grey {
+  background: #424449; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003347}}
+.bars .medium-grey {
+  background: #8f8f8f; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003349}}
+footer .bars {
+  margin: -13px 0 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003350}}
+footer .steps {
+  color: white;
+  color: rgba(255, 255, 255, 0.8);
+  float: left;
+  font: 300 15px Arial, Helvetica, sans-serif;
+  margin: 7px 0 0 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003351}}
+footer .steps span {
+  font-weight: 700; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003353}}
+ul {
+  margin: 0;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003354}}
+ul li {
+  background: #d7dbdd;
+  float: left;
+  list-style: none;
+  margin: 0 0 0 5px;
+  width: 159px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003355}}
+ul li.fifth {
+  width: 159px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003356}}
+ul li.third {
+  width: 330px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003357}}
+ul li.half {
+  width: 405px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003358}}
+ul li:first-child {
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003359}}
+ul li.text {
+  color: black;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: auto;
+  font: 300 18px Arial, Helvetica, sans-serif;
+  height: 241px;
+  line-height: 140%;
+  padding: 25px 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003360}}
+.lt-ie9 ul li.text {
+  color: #222; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003361}}
+ul li h2 {
+  color: white;
+  color: rgba(255, 255, 255, 0.8);
+  font: 700 18px Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 10px 0 20px 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003363}}
+.content {
+  float: left;
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003364}}
+.content .left {
+  float: left;
+  margin: 137px 10px 0 0;
+  position: relative;
+  width: 607px;
+  border-bottom: 8px solid #dadfe1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003365}}
+.content .right {
+  background: #d0d5d7;
+  background: rgba(208, 213, 215, 0.8);
+  color: #5d5d5e;
+  float: left;
+  padding: 15px 30px;
+  width: 363px;
+  min-height: 145px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003366}}
+.button_row {
+  float: left;
+  margin: 50px 0 75px 0;
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003367}}
+.button {
+  float: right;
+  margin: 10px 0 0 5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003368}}
+.button.wide {
+  padding-left: 80px;
+  padding-right: 80px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003369}}
+.button.compare {
+  float: left;
+  margin-left: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003371}}
+h1 {
+  border-bottom: 8px solid #d9dee1;
+  color: black;
+  color: rgba(0, 0, 0, 0.8);
+  font: 300 33px Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  line-height: 100%;
+  margin: 23px 0 12px 0;
+  padding: 40px 20px 56px 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003372}}
+h1 span {
+  color: #757575;
+  color: rgba(117, 117, 117, 0.8); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003373}}
+.lt-ie8 h1 span {
+  color: #757575; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003374}}
+h1 sup {
+  font-size: 14px;
+  top: -15px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003375}}
+.content .row {
+  color: black;
+  color: rgba(0, 0, 0, 0.8);
+  background: white;
+  font: 300 18px Arial, Helvetica, sans-serif;
+  margin: 0 0 6px 0;
+  padding: 18px 20px 18px 20px;
+  width: 980px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003376}}
+.content .row.even {
+  background: #d9dee1; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003377}}
+.content .row label {
+  float: left;
+  line-height: 210%;
+  width: 480px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003378}}
+.content .row label.multiline {
+  line-height: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003379}}
+.content .row select, .content .row input[type="text"] {
+  color: black;
+  color: rgba(0, 0, 0, 0.5);
+  width: 300px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003380}}
+.content .row label span {
+  font: 700 20px Arial, Helvetica, sans-serif; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003381}}
+.content .row label div {
+  color: black;
+  color: rgba(0, 0, 0, 0.35);
+  display: inline;
+  font: 700 14px Arial, Helvetica, sans-serif; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003382}}
+.content .row input[type="text"] {
+  font-style: italic; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003383}}
+.content .row input[type="text"].highlight, .content .row input[type="text"]:focus {
+  color: black;
+  font-style: normal !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003384}}
+input:focus::-webkit-input-placeholder {
+  color: transparent; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003386}}
+div.selector, .content .row input[type="text"] {
+  overflow: hidden;
+  position: relative;
+  width: 415px;
+  height: 40px;
+  border: 1px solid;
+  border-color: #a8acae #95999b #c4c4c4 #a8acae;
+  -webkit-box-shadow: 1px 1px 1px rgba(219, 219, 219, 0.8);
+  -moz-box-shadow: 1px 1px 1px rgba(219, 219, 219, 0.8);
+  -ms-box-shadow: 1px 1px 1px rgba(219, 219, 219, 0.8);
+  -o-box-shadow: 1px 1px 1px rgba(219, 219, 219, 0.8);
+  -box-shadow: 1px 1px 1px rgba(219, 219, 219, 0.8);
+  box-shadow: 1px 1px 1px rgba(219, 219, 219, 0.8);
+  line-height: 40px;
+  text-align: left;
+  padding: 0 22px;
+  background: white;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  -border-radius: 6px;
+  border-radius: 6px;
+  behavior: url(/PIE.htc);
+  color: #999B9D; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003387}}
+div.selector span {
+  cursor: pointer;
+  overflow: hidden;
+  display: block;
+  min-width: 415px;
+  height: 40px;
+  line-height: 40px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: left;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003388}}
+div.selector span.highlight {
+  color: #222;
+  font-style: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003389}}
+div.selector select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  border: 0 none;
+  background: none;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003390}}
+div.selector span:after {
+  position: absolute;
+  top: 6px;
+  right: 3px;
+  display: block;
+  content: "";
+  width: 42px;
+  height: 30px;
+  background: url(../images/icon-arrow-down.png);
+  margin: -2px 0 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003392}}
+div.radio {
+  overflow: hidden;
+  position: relative;
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  text-align: left;
+  margin: 0 7px 7px 0;
+  padding: 11px;
+  float: right; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003393}}
+div.radio span {
+  cursor: pointer;
+  overflow: hidden;
+  display: block;
+  padding: 11px;
+  position: relative;
+  top: -11px;
+  left: -11px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003394}}
+div.radio input {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  border: 0 none;
+  background: none;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  padding: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003395}}
+div.radio input:after {
+  position: absolute;
+  top: 6px;
+  right: 3px;
+  display: block;
+  content: "";
+  width: 22px;
+  height: 22px;
+  background: url(../images/icon-circle-bg.png);
+  margin: -2px 0 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003396}}
+div.radio span {
+  background: url(../images/icon-circle-bg.png); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003397}}
+div.radio.hover, div.radio .checked {
+  background: url(../images/icon-circle-bg-selected.png); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003398}}
+.bullets li {
+  float: none;
+  list-style-type: disc;
+  margin: 0 0 10px 15px !important;
+  padding: 0;
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003400}}
+ul li.third.rating, ul li.third .rating {
+  background: #d7dbdd;
+  padding: 0 15px 15px 15px;
+  width: 390px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003401}}
+ul li.third.rating div.row-item, ul li.third .rating div.row-item {
+  border-top: 2px solid white; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003402}}
+ul li.third.rating div:first-child, ul li.third .rating div:first-child {
+  border: none !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003403}}
+ul li.third.rating div h3, ul li.third .rating div h3 {
+  font: 300 16px Arial, Helvetica, sans-serif;
+  color: black;
+  color: rgba(0, 0, 0, 0.8); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003404}}
+ul li.third.rating div ul.scale, ul li.third .rating div ul.scale {
+  float: left;
+  width: 300px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003405}}
+ul li.third.rating div ul.scale li, ul li.third .rating div ul.scale li {
+  background: white;
+  float: left;
+  width: 28px;
+  height: 10px;
+  margin: 0 2px 0 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003406}}
+ul li.third.rating div ul.scale li.red, ul li.third .rating div ul.scale li.red {
+  background: #ef4a4e; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003407}}
+ul li.third.rating div .score, ul li.third .rating div .score {
+  background: white;
+  float: left;
+  font-size: 16px;
+  margin: -27px 0 0 0;
+  padding: 11px 14px 5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003408}}
+ul li.third.rating div p, ul li.third .rating div p {
+  float: left;
+  font: 300 9px Arial, Helvetica, sans-serif;
+  color: black;
+  color: rgba(0, 0, 0, 0.8); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003410}}
+#page_0 .logo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  float: none;
+  margin: -55px 0 0 -89px !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003411}}
+#page_0 .bars {
+  position: fixed;
+  margin: 10px 0;
+  width: 100%;
+  top: 51%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003413}}
+#page_1 .bars {
+  margin: 6px 0 5px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003414}}
+#page_1 .button_row {
+  margin: 47px 0 0 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003415}}
+.lt-ie9 #page_1 .content .left {
+  margin-top: 133px !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003416}}
+.lt-ie9 #page_1 .content .right {
+  min-height: 105px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003417}}
+.lt-ie9 #page_1 .button_row {
+  margin: 50px 0 0 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003418}}
+.lt-ie8 #page_1 .content .left {
+  margin-top: 120px !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003419}}
+.lt-ie8 #page_1 .content .right {
+  min-height: 120px;
+  padding-top: 30px;
+  padding-bottom: 0;
+  width: 303px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003420}}
+.lt-ie8 #page_1 .button_row {
+  margin: 42px 0 0 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003422}}
+#page_2 .button_row {
+  margin: 40px 0 0 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003423}}
+.lt-ie8 #page_2 .row {
+  width: 940px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003424}}
+.lt-ie8 #page_2 .content .row label {
+  width: 470px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003425}}
+.lt-ie8 #page_2 .button_row {
+  margin: 32px 0 0 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003427}}
+#page_3 h1 {
+  margin: 8px 0 12px 0;
+  padding: 40px 20px 38px 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003428}}
+#page_3 .button_row {
+  margin: 34px 0 0 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003429}}
+.lt-ie8 #page_3 ul li img {
+  height: 315px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003430}}
+.lt-ie8 #page_3 ul li.text {
+  height: 264px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003431}}
+.lt-ie8 #page_3 .button_row {
+  margin: 53px 0 0 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003433}}
+#page_4 h1 {
+  margin: 8px 0 12px 0;
+  padding: 40px 20px 38px 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003434}}
+#page_4 ul li.modern {
+  background: #a6a3a1;
+  background: rgba(166, 163, 161, 0.8);
+  cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003435}}
+#page_4 ul li.rustic {
+  background: #78532f;
+  background: rgba(120, 83, 47, 0.8);
+  cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003436}}
+#page_4 ul li.traditional {
+  background: #25100a;
+  background: rgba(37, 16, 10, 0.8);
+  cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003437}}
+#page_4 ul li.casual {
+  background: #d1c19f;
+  background: rgba(209, 193, 159, 0.8);
+  cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003438}}
+#page_4 ul li.eclectic {
+  background: #cd9a59;
+  background: rgba(205, 154, 89, 0.8);
+  cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003439}}
+#page_4 .button_row {
+  margin: 123px 0 0 0px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003440}}
+.lt-ie8 #page_4 ul li.text {
+  height: 231px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003442}}
+#page_5 h1 {
+  margin: 8px 0 12px 0;
+  padding: 40px 20px 38px 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003443}}
+#page_5 .button_row {
+  margin: 34px 0 75px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003445}}
+#page_6 h1 {
+  margin: 8px 0 12px 0;
+  padding: 40px 20px 38px 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003446}}
+#page_6 ul li.text {
+  height: 241px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003447}}
+#page_6 ul li.carpet {
+  background: #a6a3a1;
+  background: rgba(166, 163, 161, 0.8);
+  cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003448}}
+#page_6 ul li.hardwood {
+  background: #656565;
+  background: rgba(101, 101, 101, 0.8);
+  cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003449}}
+#page_6 .button_row {
+  margin: 43px 0 75px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003451}}
+#page_7 h1 {
+  margin: 8px 0 12px 0;
+  padding: 40px 20px 38px 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003452}}
+#page_7 ul li.text {
+  width: 148px;
+  height: 245px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003453}}
+#page_7 ul li.third {
+  width: 272px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003454}}
+#page_7 .button_row {
+  margin: 123px 0 75px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003456}}
+#page_7 ul li.stain {
+  background: #627686;
+  background: rgba(98, 118, 134, 0.8);
+  cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003457}}
+#page_7 ul li.wear {
+  background: #8c775a;
+  background: rgba(140, 119, 90, 0.8);
+  cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003458}}
+#page_7 ul li.worry {
+  background: #604f20;
+  background: rgba(96, 79, 32, 0.8);
+  cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003460}}
+#page_8 h1 {
+  font: 300 30px Arial, Helvetica, sans-serif;
+  border: none;
+  margin: 105px 0 0 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003461}}
+#page_8 .bars {
+  margin: 0 0 150px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003463}}
+#page_9 ul li.text, #page_9 ul li.click {
+  background: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003464}}
+#page_9 ul li.third.text {
+  width: 250px;
+  padding: 25px 5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003465}}
+#page_9 ul li.third.text div, #page_compare ul li.third .text div {
+  color: #e51937;
+  font: 700 21px Arial, Helvetica, sans-serif;
+  margin: 20px 0 0 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003466}}
+#page_9 ul li.third.click div {
+  text-align: center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003467}}
+#page_9 ul li.third.click div img {
+  margin: 20px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003468}}
+#page_9 ul li.third.click div a {
+  font: 300 12px Arial, Helvetica, sans-serif; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003469}}
+#page_9 .button_row {
+  margin: 28px 0 0 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003470}}
+.ie9 #page_9 .button_row {
+  margin: 41px 0 0 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003472}}
+#page_10 .content .left {
+  border: none;
+  margin: 0;
+  width: 300px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003473}}
+#page_10 .content .right {
+  background: none;
+  font: 300 18px Arial, Helvetica, sans-serif;
+  line-height: 160%;
+  margin: 0 0 0 28px;
+  padding: 10px 30px;
+  width: 640px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003474}}
+#page_10 .content .right ul li {
+  background: none;
+  font: 300 18px Arial, Helvetica, sans-serif; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003475}}
+#page_10 .button_row {
+  margin: 43px 0 75px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003477}}
+#page_11 h1 {
+  margin: 8px 0 12px 0;
+  padding: 40px 20px 38px 20px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003478}}
+#page_11 .content .left {
+  background: #D7DBDD;
+  color: black;
+  color: rgba(0, 0, 0, 0.8);
+  float: left;
+  font: 300 16px Arial, Helvetica, sans-serif;
+  height: 323px;
+  margin: 0 10px 0 0;
+  padding: 25px 20px;
+  width: 159px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003479}}
+#page_11 .content .left span {
+  color: #E51937;
+  font: 700 16px Arial, Helvetica, sans-serif; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003480}}
+#page_11 .content .right {
+  background: none;
+  padding: 0;
+  width: 810px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003481}}
+#page_11 .content .right .row {
+  width: 810px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003482}}
+#page_11 .content .row label {
+  width: 355px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003483}}
+#page_11 .button_row {
+  margin: 40px 0 75px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003484}}
+.lt-ie9 #page_11 .content .left {
+  color: #222; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003486}}
+#page_12 ul li.text {
+  width: 302px;
+  height: 334px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003487}}
+#page_12 .button_row {
+  margin: 34px 0 75px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003489}}
+#page_saved_choices .content {
+  margin: 88px 0 0 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003490}}
+#page_saved_choices .content ul li.third, #page_saved_choices .content ul.second-row li:first-child {
+  background-color: #d0d5d7;
+  background-color: rgba(208, 213, 215, 0.8);
+  width: 323px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003491}}
+#page_saved_choices .content ul li.third .text {
+  padding: 20px 15px;
+  font: 300 14px Arial, Helvetica, sans-serif; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003492}}
+#page_saved_choices .content ul li.third .text .title {
+  font: 700 18px Arial, Helvetica, sans-serif;
+  margin: 0 0 5px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003493}}
+#page_saved_choices .content ul li.third .text .style, #page_saved_choices .content ul.second-row li:first-child .text .style {
+  color: #424449;
+  color: rgba(66, 68, 73, 0.8);
+  font: 300 16px Arial, Helvetica, sans-serif; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003494}}
+#page_saved_choices .content ul li.third a {
+  color: #222;
+  text-decoration: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003495}}
+#page_saved_choices .content ul li.third a:hover .style, #page_saved_choices .content ul.second-row li.third a:hover .style {
+  color: #222; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003496}}
+#page_saved_choices .content ul li:first-child {
+  background-color: #37454c;
+  background-color: rgba(55, 69, 76, 0.8);
+  color: white; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003497}}
+#page_saved_choices .content ul li:first-child .text .style {
+  color: white; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003498}}
+#page_saved_choices .content ul.second-row {
+  clear: both;
+  float: left;
+  margin: 5px 0 0 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003499}}
+#page_saved_choices .content ul.second-row li:first-child {
+  color: #222;
+  height: 240px;
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003500}}
+#page_saved_choices .button_row {
+  margin: 50px 0 75px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003501}}
+#page_saved_choices .button.back {
+  float: left;
+  margin-left: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003502}}
+.ie9 #page_saved_choices .button_row {
+  margin: 50px 0 75px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003503}}
+.lt-ie9 #page_saved_choices .content ul.second-row li:first-child {
+  height: 238px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003505}}
+#page_compare #content .content {
+  margin: 36px 0 0 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003506}}
+#page_compare ul li.third {
+  float: left;
+  margin: -11px 0 0 0;
+  width: 400px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003507}}
+#page_compare ul li.third .text div {
+  float: left;
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003508}}
+#page_compare ul li .heading {
+  border-bottom: 12px solid #d9dee1;
+  color: #757575;
+  color: rgba(117, 117, 117, 0.8);
+  float: left;
+  font: 300 21px Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  line-height: 100%;
+  margin: 0;
+  padding: 0 0 10px 0;
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003509}}
+#page_compare ul li.third, #page_compare ul li.third.compare, #page_compare ul li.third.compare .right {
+  background: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003510}}
+#page_compare .content .left {
+  border: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003511}}
+#page_compare ul li.third .rating {
+  padding: 1px 15px 5px 15px;
+  width: 400px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003512}}
+#page_compare ul li.third .rating ul.scale {
+  width: 310px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003513}}
+#page_compare ul li.third .rating ul.scale li {
+  width: 29px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003514}}
+#page_compare ul li.third.compare {
+  float: left;
+  padding: 227px 0 0 0;
+  text-align: center;
+  width: 180px !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003515}}
+#page_compare ul li.third.compare div div {
+  color: #E51937;
+  font: 700 24px Arial, Helvetica, sans-serif;
+  background: #d0d5d7;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  -webkit-border-radius: 75px;
+  -moz-border-radius: 75px;
+  -ms-border-radius: 75px;
+  -o-border-radius: 75px;
+  -border-radius: 75px;
+  border-radius: 75px;
+  behavior: url(/PIE.htc);
+  margin: 0 auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003516}}
+#page_compare ul li.third.compare div.graph_right {
+  background: url(../images/arrow_right.gif) 118px no-repeat; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003517}}
+#page_compare ul li.third.compare div.graph_middle {
+  margin: 42px auto 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003518}}
+#page_compare ul li.third.compare div.graph_left {
+  background: url(../images/arrow_left.gif) 35px no-repeat;
+  margin: 30px auto 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003519}}
+#page_compare .button_row {
+  margin: 38px 0 75px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003520}}
+.ie9 #page_compare .button_row {
+  margin: 56px 0 75px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003521}}
+.lt-ie9 #page_compare .button_row {
+  margin: 46px 0 75px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003522}}
+#page_compare .button.back {
+  float: left;
+  margin-left: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003524}}
+.lt-ie9 header {
+  border-bottom: 1px solid #d4d4d4; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003525}}
+.lt-ie9 #page_1 .content .left {
+  margin-top: 165px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003527}}
+#page_3 ul li.text, #page_5 ul li.text {
+  width: 302px;
+  height: 334px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003528}}
+#page_2 h2, #page__4 h2, #page_8 h2 {
+  color: black;
+  color: rgba(0, 0, 0, 0.8);
+  font: 700 22px Arial, Helvetica, sans-serif;
+  line-height: 160%;
+  margin: 175px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003529}}
+#page_compare h2 {
+  text-align: center;
+  width: 980px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003531}}
+.button_row {
+  margin: 0 0 0 -10px !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003532}}
+#page_2 .button_row, #page_4 .button_row, #page_6 .button_row, #page_7 .button_row, #page_9 .button_row {
+  margin: -30px 0 0 50px !important;
+  width: 920px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003533}}
+#page_9 .button_row, #page_compare .button_row, #page_saved_choices .button_row {
+  margin: 0 0 0 10px !important;
+  width: 960px; }
+
+/* -- Content (internal)
+======================================================================*/
+/* -- Side Navigation -- */
+/* -- Footer
+======================================================================*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003612}}
+footer {
+  clear: both;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  color: white; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/style\.scss}line{font-family:\00003621}}
+footer .footer-wrapper {
+  width: 980px;
+  height: 56px;
+  margin: 53px auto 0;
+  background: #e51937; }
+
+/* -- Footer Navigation -- */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_mixins\.scss}line{font-family:\0000339}}
+.nav-footer, .nav-footer ul, .nav-footer li, .nav-footer a {
+  position: relative;
+  float: left;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+/* -- Copyright -- */
+/* -- Agency Info -- */
+/* -- Responsive (borrowed from Bones (http://themble.com/bones/) )
+======================================================================*/
+@media only screen and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_768up\.scss}line{font-family:\0000310}}
+  .image-header img {
+    height: 187px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_768up\.scss}line{font-family:\0000311}}
+  .flex-container, section.splash, .slider-bottom, .slider-bottom img {
+    width: 1007px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_768up\.scss}line{font-family:\0000312}}
+  section.splash {
+    width: 990px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_768up\.scss}line{font-family:\0000313}}
+  .flexslider .slides img {
+    padding: 0;
+    margin: 0;
+    width: 1007px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_768up\.scss}line{font-family:\0000314}}
+  .slider-bottom {
+    top: 649px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_768up\.scss}line{font-family:\0000319}}
+  .image-header .notch {
+    visibility: hidden; } }
+@media only screen and (min-width: 1030px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_1030up\.scss}line{font-family:\000037}}
+  .image-header img {
+    height: 260px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_1030up\.scss}line{font-family:\000038}}
+  .image-header .notch, .image-header img {
+    width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_1030up\.scss}line{font-family:\000039}}
+  .flex-container, section.splash, .slider-bottom, .slider-bottom img {
+    width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_1030up\.scss}line{font-family:\0000310}}
+  section.splash {
+    width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_1030up\.scss}line{font-family:\0000311}}
+  .flexslider .slides img {
+    padding: 0;
+    margin: 0;
+    width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_1030up\.scss}line{font-family:\0000312}}
+  .slider-bottom {
+    top: 648px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_1030up\.scss}line{font-family:\0000313}}
+  .image-header .notch {
+    bottom: 18px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_1030up\.scss}line{font-family:\0000318}}
+  .image-header .notch {
+    height: 17px; } }
+/* -- Helper classes
+======================================================================*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_helpers\.scss}line{font-family:\000033}}
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_helpers\.scss}line{font-family:\000034}}
+.clearfix:after {
+  clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_helpers\.scss}line{font-family:\000035}}
+.clearfix {
+  *zoom: 1; }
+
+/* -- IE styles
+======================================================================*/
+@media print {
+  /* -- Print styles
+  ======================================================================*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_print\.scss}line{font-family:\000033}}
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_print\.scss}line{font-family:\0000311}}
+  a, a:visited {
+    color: #444 !important;
+    text-decoration: underline; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_print\.scss}line{font-family:\0000316}}
+    a:after, a:visited:after {
+      content: " (" attr(href) ")"; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_print\.scss}line{font-family:\0000321}}
+    a abbr[title]:after, a:visited abbr[title]:after {
+      content: " (" attr(title) ")"; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_print\.scss}line{font-family:\0000328}}
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_print\.scss}line{font-family:\0000332}}
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_print\.scss}line{font-family:\0000337}}
+  thead {
+    display: table-header-group; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_print\.scss}line{font-family:\0000341}}
+  tr, img {
+    page-break-inside: avoid; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_print\.scss}line{font-family:\0000345}}
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_print\.scss}line{font-family:\0000353}}
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_print\.scss}line{font-family:\0000359}}
+  h2,
+  h3 {
+    page-break-after: avoid; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_print\.scss}line{font-family:\0000374}}
+  .sidebar,
+  .page-navigation,
+  .wp-prev-next,
+  .respond-form,
+  #content .left,
+  #content .right,
+  .image-header .bg,
+  #SiteHeader,
+  .image-header,
+  .single .center .content:before, .page .center .content:before,
+  nav {
+    display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_print\.scss}line{font-family:\0000378}}
+  #content .center {
+    border: none !important;
+    width: 98%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/cwyatt\.RCI\/Documents\/Projects\/Mohawk\/sass\/modules\/_print\.scss}line{font-family:\0000379}}
+  .center .content .featured {
+    width: 100%; } }
